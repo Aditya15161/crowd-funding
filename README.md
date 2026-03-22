@@ -1,0 +1,10 @@
+This README.md is designed specifically for your Empower Fund project, incorporating the directory structure and technical stack from your documentation.Empower FundEmpower Fund is a full-stack crowdfunding platform designed to bridge the gap between visionary creators and goal-oriented investors. Built using the MERN stack, the application provides a transparent ecosystem for launching, managing, and funding impactful campaigns.🚀 FeaturesDual-Dashboard System: Tailored interfaces for Creators to track campaign progress and Investors to manage their portfolio.Campaign Management: Full CRUD functionality allowing creators to define project goals, deadlines, and categories.Secure Transactions: Integrated payment handling logic and transaction recording to ensure financial integrity.Verified Access: Robust JWT-based authentication and protected routes to secure user profiles.🛠️ Tech StackFrontend: React.js with Vite and CSS Modules for encapsulated styling.Backend: Node.js & Express.js following the MVC (Model-View-Controller) pattern.Database: MongoDB with Mongoose for schema-based data modeling.Authentication: JSON Web Tokens (JWT) for secure session management.📂 Project StructureThe project is divided into two main directories:/client: The React frontend, including reusable UI components, global styles, and page views./server: The RESTful API backend, containing models, controllers, and database configurations.⚙️ Installation & Setup1. Clone the repositoryBashgit clone <your-repository-link>
+cd empower-fund
+2. Backend SetupNavigate to the server directory and install dependencies:Bashcd server
+npm install
+Create a .env file in the /server directory and add your credentials:Code snippetPORT=8000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+3. Frontend SetupNavigate to the client directory and install dependencies:Bashcd ../client
+npm install
+4. Running the ApplicationYou can run both the client and server concurrently from the root directory if configured:Bashnpm run dev
